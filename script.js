@@ -20,6 +20,7 @@ function stop() {
 }
 
 function reset() {
+    clearInterval(interval);
     sec = 0;
     min = 0;
     hour = 0;
