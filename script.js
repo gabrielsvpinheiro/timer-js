@@ -1,7 +1,7 @@
 let sec = 0
 let min = 0
 let hour = 0
-let interval
+let interval;
 
 function twoDigits(number) {
     if(number < 10) {
@@ -12,6 +12,7 @@ function twoDigits(number) {
 
 
 function start() {
+    clearInterval(interval);
     interval = setInterval(counter, 1000);
 }
 
